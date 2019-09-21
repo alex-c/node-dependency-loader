@@ -1,0 +1,36 @@
+{
+  "name": "node-dependency-loader",
+  "version": "0.1.0",
+  "description": "Load objects from files at runtime and resolve dependencies.",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test",
+    "test": "jest --config jestconfig.json"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alex-c/node-dependency-loader.git"
+  },
+  "keywords": [
+    "dependency graph",
+    "loader"
+  ],
+  "author": "Alexandre Charoy <alexandre.charoy@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/alex-c/node-dependency-loader/issues"
+  },
+  "homepage": "https://github.com/alex-c/node-dependency-loader#readme",
+  "devDependencies": {
+    "@types/jest": "^24.0.18",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.1.0",
+    "typescript": "^3.6.3"
+  }
+}
