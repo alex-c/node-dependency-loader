@@ -1,7 +1,7 @@
 import path = require('path');
 import Library from '../Library';
 
-let testDataDirectory = './src/__tests_data__';
+let testDataDirectory = path.join(process.cwd(), './src/__tests_data__');
 
 test('Recursively list files in directory', () => {
   const library = new Library();
